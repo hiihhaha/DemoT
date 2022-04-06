@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="120dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_launcher" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:text="@string/app_name"
+        android:textColor="#000"
+        android:textSize="30sp" />
+
+    <RelativeLayout
+        android:id="@+id/loadingIntenal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom|center">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:alpha="0.8"
+            android:gravity="center"
+            android:text="@string/this_action_can_contain_ads"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <ProgressBar
+            android:id="@+id/progressBarHorizontal"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@id/textView"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="bottom|center"
+            android:indeterminate="true"
+            android:minHeight="15dp"
+            android:progress="30"
+            android:theme="@style/progressBarBlue"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</LinearLayout>

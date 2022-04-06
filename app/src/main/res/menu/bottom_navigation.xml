@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_scan"
+        android:icon="@drawable/ic_scan_main"
+        android:title="Scan QR" />
+    <item
+        android:id="@+id/nav_history"
+        android:icon="@drawable/ic_history_main"
+        android:title="History" />
+
+
+    <item
+        android:id="@+id/nav_create"
+        android:icon="@drawable/ic_create_main"
+        android:title="Create QR" />
+
+    <item
+        android:id="@+id/nav_setting"
+        android:icon="@drawable/ic_setting_main"
+        android:title="Setting" />
+
+
+</menu>
